@@ -1,3 +1,108 @@
+/*  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: red;
-  color: white; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* 24px */
+a {
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s; }
+
+a:active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+a {
+  color: #1c337a;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent; }
+  a:visited {
+    color: #553c7a; }
+  a:hover, a:focus {
+    color: #3061b0;
+    cursor: pointer; }
+  a:active {
+    color: #9f0012; }
+  a > .icon {
+    color: #9f0012; }
+  a:hover > .icon, a:focus > .icon {
+    color: black; }
+  a:active > .icon {
+    color: #ed1b2f; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  line-height: 1.5;
+  background-color: white;
+  color: #1d2125;
+  font-size: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  min-width: 320px;
+  padding-top: 2.5rem; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  font-size: 1rem;
+  color: #1d2125; }

@@ -1,6 +1,7 @@
-// Reqs
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
@@ -18,15 +19,15 @@ var runSequence = require('run-sequence');
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'dist'
+      baseDir: 'app'
     }
   })
 })
 
 gulp.task('sass', function() {
-  return gulp.src('app/sass/*.sass') // Gets all files ending with .sass in app/sass and children dirs
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // Passes it through a gulp-sass
-    .pipe(gulp.dest('dist/css')) // Outputs it in the css folder
+  return gulp.src('app/sass/**/*.sass') // Gets all files ending with .sass in app/scss and children dirs
+    .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass
+    .pipe(gulp.dest('app/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -34,10 +35,11 @@ gulp.task('sass', function() {
 
 // Watchers
 gulp.task('watch', function() {
-  gulp.watch('app/sass/*.sass', ['sass']);
-  gulp.watch('app/**/*.html', browserSync.reload);
+  gulp.watch('app/sass/**/*.sass', ['sass']);
+  gulp.watch('app/sass/**/*._sass', ['sass']);
+  gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
-});
+})
 
 // Optimization Tasks
 // ------------------
@@ -48,6 +50,7 @@ gulp.task('useref', function() {
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'));
 });
 
@@ -59,7 +62,7 @@ gulp.task('images', function() {
       interlaced: true,
     })))
     .pipe(gulp.dest('dist/images'))
-})
+});
 
 // Copying fonts
 gulp.task('fonts', function() {
@@ -79,21 +82,18 @@ gulp.task('clean:dist', function() {
 });
 
 // Build Sequences
-// -----------------
+// ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(
-    'sass',
-    ['browserSync', 'watch'],
+  runSequence(['sass', 'browserSync', 'watch'],
     callback
   )
-});
+})
 
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
-    ['sass', 'images', 'fonts'],
-    'useref',
+    ['sass', 'useref', 'images', 'fonts'],
     callback
   )
-});
+})

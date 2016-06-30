@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/composition.css">
+    <!--endbuild-->
   </head>
   <body>
-    hi there
+    hi lekker man aa N??0
+
+    <input type="text" value="bla bla bla" />
+
+    <svg class="icon icon-plus"><use xlink:href="images/symbol-defs.svg#icon-plus"></use></svg>
     <!-- build:js js/main.min.js -->
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/svgxuse/svgxuse.js" defer></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
   </body>
