@@ -6,93 +6,6 @@
 %no-transition
   +removeTransition
 
-%clearfix
-  &:after
-    content: ""
-    display: table
-    clear: both
-
-%away
-  @media screen
-    position: absolute !important
-    height: 1px
-    width: 1px
-    overflow: hidden
-    clip: rect(1px, 1px, 1px, 1px)
-
-%insider
-  +box-sizing(border-box)
-
-%simple-flex
-  +flexbox()
-  > *
-    +flex(auto)
-
-// Typography settings
-%title-text
-  font-weight: bold
-  font-size: $title-size
-  color: $black
-
-%subtitle-text
-  font-weight: normal
-  font-size: $subtitle-size
-
-// Triggers
-%trigger
-  color: $link-color
-  display: inline-block
-  @extend %common-transition
-  -webkit-tap-highlight-color: rgba(0,0,0,0)
-  &:visited
-    color: $link-color-visited
-  &:hover,
-  &:focus
-    color: $link-color-hover
-    cursor: pointer
-  &:active
-    @extend %no-transition
-    color: $link-color-active
-  > .icon
-    color: $icon-color
-  &:hover,
-  &:focus
-    > .icon
-      color: $black
-  &:active
-    > .icon
-      color: $icon-color-active
-
-%normal-static
-  background-color: $lightest-gray
-  border: 1px solid $light-gray
-  cursor: pointer
-  color: $ll-gray
-  > .icon
-    color: $ll-gray
-  &:hover,
-  &:focus,
-  &:active
-    color: $ll-red-40k
-    > .icon
-      color: $ll-red-40k
-
-%normal-disabled
-  background-color: transparent
-  border: 1px solid $light-gray
-  cursor: default
-  color: $light-gray
-  > .icon
-    color: $light-gray
-  &:hover,
-  &:focus,
-  &:active
-    background-color: transparent
-    border: 1px solid $light-gray
-    cursor: default
-    > .icon
-      color: $light-gray
-
 // Base styles
 
 html,
@@ -109,7 +22,6 @@ body
   font-size: $base-font-size
   font-family: $base-font-family
   min-width: 320px
-  padding-top: 2.5rem
 
 .icon
   display: inline-block
@@ -118,6 +30,3 @@ body
   fill: currentColor
   font-size: 1rem
   color: $ll-gray
-
-a
-  @extend %trigger
