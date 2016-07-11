@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/composition.css">
+    <!--endbuild-->
+  </head>
+  <body>
+
+    <form class="form form--activation" autocomplete="on" method="get" action="freischaltung-bestaetigung.html" novalidate>
+      <header class="mini-header">
+        <a href="#" class="mini-header--logo">
+          <img src="images/logo.svg">
+        </a>
+      </header>
+      <h1 class="headline headline__inset headline__centered">Neues Passwort festlegen</h1>
+      <p class="subheadline subheadline__centered">Bitte legen Sie ein neues Passwort für Lekkerland24 an.<br/>Passwort muss mindestens 8 Zeichen lang sein und muss mindestens ein Ziffer und eine Großbuchstabe beinhalten. Sonderzeichen sind erlaubt.</p>
+      <fieldset class="fieldset">
+        <p class="form-component">
+          <label data-validation="error">
+            <span class="label-value label-value__required">Passwort:</span>
+            <input class="input--text" type="password" id="password1" name="password1" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte vergeben Sie ein Passwort, das den genannten Anforderungen entspricht.</span>
+          </label>
+        </p>
+        <p class="form-component">
+          <label data-validation="error">
+            <span class="label-value label-value__required">Passwort wiederholen:</span>
+            <input class="input--text" type="password" id="password2" name="password2" autocomplete="email" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte überprüfen Sie Ihre Eingaben: Sie stimmen nicht überein.</span>
+          </label>
+        </p>
+        <p class="required-legend">* Pflichtfeld</p>
+        <button type="submit" class="button" value="submit">Passwort speichern und einloggen</button>
+      </fieldset>
+
+    </form>
+
+    <footer class="footer">
+      <a href="#" class="link link--off-topic">Impressum</a>
+    </footer>
+
+    <!-- build:js js/main.min.js -->
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/svgxuse/svgxuse.js" defer></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
