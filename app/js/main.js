@@ -1,1 +1,1 @@
-alert('Hi, doggy!!');
+console.log('hi lekkerland!');

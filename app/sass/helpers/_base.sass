@@ -1,0 +1,32 @@
+// Tricks and fixes
+
+%common-transition
+  +addTransition
+
+%no-transition
+  +removeTransition
+
+// Base styles
+
+html,
+body
+  width: 100%
+  height: 100%
+
+html
+  -webkit-text-size-adjust: 100%
+body
+  line-height: $line-height
+  background-color: $body-background
+  color: $text-color
+  font-size: $base-font-size
+  font-family: $base-font-family
+  min-width: 320px
+
+.icon
+  display: inline-block
+  width: 1em
+  height: 1em
+  fill: currentColor
+  font-size: 1rem
+  color: $ll-gray

@@ -1,0 +1,104 @@
+.fieldset
+  display: block
+  padding: 0 1rem
+  > .required-legend
+    float: left
+  > .button
+    margin-top: 1rem
+    float: right
+
+.form-component
+  display: block
+  @extend %insider
+  width: 100%
+  padding-bottom: 1rem
+  &__radios
+    > label
+      display: inline-block
+      padding-right: 1rem
+      cursor: pointer
+      > .input--value
+        font-size: 1.25rem
+        vertical-align: middle
+  &__multi
+    @extend %clearfix
+    > label
+      display: block
+      @extend %insider
+      float: left
+    @media (max-width: $xs)
+      padding-bottom: 0
+      > label
+        float: none
+        clear: both
+        padding-left: 0
+        margin-bottom: 1rem
+
+.input
+  &--radio
+    font-size: 2rem
+  &--text
+    @extend %insider
+    @extend %common-transition
+    border: 1px solid $light-gray
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.15)
+    margin: 0
+    padding: 0.25rem
+    font-size: 1.5rem
+    width: 100%
+    &:focus
+      background-color: $ll-light-yellow
+      border-color: $ll-gray-20
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2)
+      outline: none
+
+.label-value
+  display: block
+  @extend %txt__normal__italic
+  font-size: 0.85rem
+  &__required
+    &::after
+      content: "*"
+      font-size: 0.75rem
+      color: $ll-gray-40
+      display: inline-block
+      margin-left: 0.1rem
+
+// Validation styling
+
+.required-legend
+  @extend %txt__normal__italic
+  font-size: 0.75rem
+  color: $ll-gray-40
+
+.icon-validation-error,
+.validation-message
+  display: none
+
+[data-validation="error"]
+  display: block
+  position: relative
+  .label-value
+    color: $ll-red-40k
+    &__required
+      &::after
+        color: $ll-red-40k
+  .input
+    &--text
+      border-color: $ll-red-40k
+  .icon-validation-error
+    display: block
+    color: $ll-red-40k
+    fill: $ll-red-40k
+    position: absolute
+    right: 0.75rem
+    top: 2rem
+  .validation-message
+    display: block
+    background-color: $lightest-gray
+    padding: 0.25rem 0.5rem 0.2rem 0.5rem
+    font-size: 0.85rem
+
+.form-component__radios[data-validation="error"]
+  label
+    border: 1px solid $ll-red-40k

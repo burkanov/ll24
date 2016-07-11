@@ -1,0 +1,32 @@
+// Components
+
+.headline
+  @extend %txt__bold
+  display: block
+  position: relative
+  font-size: 2.5rem
+  background-color: $lightest-gray
+  padding: 0.25rem 1rem 0rem 1rem
+  line-height: 1.5
+  &__inset
+    margin: 0 -1rem
+    padding: 0.25rem 2rem 0rem 2rem
+
+.subheadline
+  display: block
+  padding: 1rem
+
+.headline,
+.subheadline
+  &__centered
+    text-align: center
+
+.headline-icon
+  width: 2rem
+  height: 2rem
+  font-size: 2rem
+  vertical-align: text-top
+  color: $ll-red
+
+@media (max-width: $xs)
+  .headline-icon

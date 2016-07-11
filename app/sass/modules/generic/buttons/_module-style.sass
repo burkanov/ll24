@@ -1,0 +1,19 @@
+.button
+  display: block
+  padding: 0 1.5rem
+  font-size: 1rem
+  line-height: 2rem
+  border: none
+  background-color: $lightest-gray
+  cursor: pointer
+  color: $ll-gray
+  +border-radius(1.5rem)
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24)
+  @extend %txt__bold
+  @extend %common-transition
+  padding-top: 0.15rem
+  &:focus,
+  &:hover
+    background-color: $white
+    color: $ll-red-40k
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.34)

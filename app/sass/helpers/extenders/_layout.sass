@@ -1,0 +1,25 @@
+%clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+%away
+  @media screen
+    position: absolute !important
+    height: 1px
+    width: 1px
+    overflow: hidden
+    clip: rect(1px, 1px, 1px, 1px)
+
+%insider
+  +box-sizing(border-box)
+
+%basis-container
+  display: block
+  @extend %insider
+  margin: 0 auto
+  max-width: 65rem
+  background-color: $white
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24)
+  padding: 0 1rem 3rem 1rem
