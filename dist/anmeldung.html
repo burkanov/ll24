@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Anmeldung</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!-- start temporary, just for the prototype -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_aEKgH5KTieJj2VN7WqM1g");
+       })();
+    </script>
+    <!-- end temporary, just for the prototype -->
+  </head>
+
+  <body>
+
+    <form id="sign-up" class="form form--sign-up" autocomplete="on" method="get" action="#" novalidate>
+      <header class="mini-header">
+        <a href="index.html" class="mini-header--logo">
+          <img src="images/logo.svg">
+        </a>
+      </header>
+      <h1 class="headline headline__inset headline__centered">Anmeldung</h1>
+      <!-- <p class="subheadline subheadline__centered">Arbeiten Sie schon mit Lekkerland und haben ein Kundennummer?<br/>Wir stellen Ihnen die Zugangsdaten gern zur Verfügung.<br/>Sind Sie noch nicht unser Kunde? Lass uns kennenlernen!</p> -->
+      <fieldset class="fieldset">
+        <p class="form-component form-component__radios" data-validation="unchecked">
+          <span class="label-value label-value__required">Anrede:</span>
+          <label>
+            <input class="input--radio" type="radio" name="sex" id="sexM" value="m">
+            <span class="input--value">Herr</span>
+          </label>
+          <label>
+            <input class="input--radio" type="radio" name="sex" id="sexF" value="f">
+            <span class="input--value">Frau</span>
+          </label>
+          <span class="validation-message">Bitte w&auml;hlen Sie eine Anrede aus.</span>
+        </p>
+        <p class="form-component form-component__multi names">
+          <label data-validation="unchecked">
+            <span class="label-value label-value__required">Vorname:</span>
+            <input class="input--text" type="text" id="fname" name="fname" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte geben Sie Ihren Vornamen an.</span>
+          </label>
+          <label data-validation="unchecked">
+            <span class="label-value label-value__required">Nachname:</span>
+            <input class="input--text" type="text" id="lname" name="lname" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte geben Sie Ihren Nachnamen an.</span>
+          </label>
+        </p>
+        <p class="form-component">
+          <label data-validation="unchecked">
+            <span class="label-value label-value__required">Telefonnummer:</span>
+            <input class="input--text" type="text" id="phoneNumber" name="phoneNumber" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte geben Sie Ihre Telefonnummer an.</span>
+          </label>
+        </p>
+        <p class="form-component">
+          <label data-validation="unchecked">
+            <span class="label-value label-value__required">E-Mail Adresse:</span>
+            <input class="input--text" type="email" id="email" name="email" autocomplete="email" />
+            <svg class="icon icon-validation-error">
+              <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+            </svg>
+            <span class="validation-message">Bitte geben Sie Ihre E-Mail Adresse an.</span>
+          </label>
+        </p>
+        <p class="required-legend">* Pflichtfeld</p>
+        <p class="form-component form-component__checkbox">
+          <input class="input--checkbox" type="checkbox" id="newsletter" name="newsletter" value="yes" />
+          <label for="newsletter">
+            <svg class="icon icon--checkmark">
+              <use xlink:href="images/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
+            <span class="label-value">Newsletter abonnieren</span>
+          </label>
+        </p>
+        <button type="submit" class="button" value="submit">Absenden</button>
+        <p class="info-well info-well__small">
+          <svg class="icon headline-icon--info">
+            <use xlink:href="images/symbol-defs.svg#icon-info"></use>
+          </svg>
+          Mit Ihrer Anmeldung erklären Sie sich mit unseren <a href="#" class="link link__low-prio">AGB</a>, unserer <a href="#" class="link link__low-prio">Datenschutzerklärung</a>, sowie den <a href="#" class="link link__low-prio">Bestimmungen zu Cookies &amp; Internet-Werbung</a> einverstanden.
+        </p>
+        <input type="checkbox" id="terms-agreed" name="terms-agreed" value="yes" hidden checked="checked">
+      </fieldset>
+
+      <div class="submit-confirmation">
+        <h1 class="headline headline__inset headline__centered">
+          <svg class="icon headline-icon headline-icon--checkmark">
+            <use xlink:href="images/symbol-defs.svg#icon-checkmark"></use>
+          </svg>
+          Danke! Wir haben Ihnen ein E-Mail versendet!
+        </h1>
+        <p class="subheadline subheadline__centered">
+          So geht's jetzt weiter: wir haben Ihnen ein E-Mail versendet mit dem Bestätigungs-Link. Bitte bestätigen Sie Ihre Anmeldung durch den Link - dann werden wir Sie noch bitten ein Passwort zu setzen. Sollten Sie den E-Mail nicht erhalten haben, bitte überprüfen Sie auch den "Spam"-Ordner.
+        </p>
+      </div>
+
+    </form>
+
+    <footer class="footer">
+      <a href="#" class="link link__low-prio">Impressum</a>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

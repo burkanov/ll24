@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/composition.css">
+    <!--endbuild-->
+  </head>
+  <body>
+
+    <form class="form form--sign-up" autocomplete="on" method="get" action="#" novalidate>
+      <header class="mini-header">
+        <a href="#" class="mini-header--logo">
+          <img src="images/logo.svg">
+        </a>
+      </header>
+      <h1 class="headline headline__inset headline__centered">Uups :(</h1>
+      <p class="subheadline subheadline__centered">Das Link zum Passwort-Setzen ist leider abgelaufen und nach 24 Stunden nicht mehr gültig. Sollen wir Ihnen ein neues Link schicken?</p>
+      <fieldset class="fieldset">
+        <button type="submit" class="button" value="submit">Passwort-Link erneut schicken</button>
+      </fieldset>
+
+      <div class="submit-confirmation">
+        <h1 class="headline headline__inset headline__centered">
+          <svg class="icon headline-icon headline-icon--checkmark">
+            <use xlink:href="images/symbol-defs.svg#icon-checkmark"></use>
+          </svg>
+          Danke! Wir haben Ihnen ein E-Mail versendet!
+        </h1>
+        <p class="subheadline subheadline__centered">
+          So geht's jetzt weiter: wir haben Ihnen ein E-Mail versendet mit dem Bestätigungs-Link. Bitte bestätigen Sie Ihre Anmeldung durch den Link - dann werden wir Sie noch bitten ein Passwort zu setzen. Sollten Sie den E-Mail nicht erhalten haben, bitte überprüfen Sie auch den "Spam"-Ordner.
+        </p>
+      </div>
+
+    </form>
+
+    <footer class="footer">
+      <a href="#" class="link link--off-topic">Impressum</a>
+    </footer>
+
+    <!-- build:js js/main.min.js -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js" defer></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

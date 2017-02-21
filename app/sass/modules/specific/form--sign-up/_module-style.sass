@@ -1,0 +1,48 @@
+.form--sign-up
+  @extend %basis-container
+  > .subheadline
+    margin: 0 auto 1rem auto
+  > .fieldset
+    @extend %insider
+    position: relative
+    max-width: 45rem
+    margin: 1.5rem auto 0 auto
+    padding-right: 17rem
+    background: white url('../images/sign-up-lady.png') no-repeat right 15%
+    background-size: 14rem auto
+    > .button
+      margin-top: -3rem
+    > .info-well
+      margin-top: 0.75rem
+      @extend %clearfix
+  > .submit-confirmation
+    display: none
+  .names
+    > label
+      width: calc(50% - 0.5rem)
+      min-width: 11.25rem
+      &:first-child
+        margin-right: 1rem
+  .required-legend
+    margin-bottom: 1.5rem
+  @media (max-width: 45rem)
+    .names
+      +reset-multies
+      > label
+        width: 100%
+        &:first-child
+        margin-right: none
+  @media (max-width: 41rem)
+    > .fieldset
+      > .button
+        margin-top: 1rem
+      > .info-well
+        margin-top: 5.5rem
+  @media (max-width: 35rem)
+    > .fieldset
+      background-size: 12rem auto
+      padding-right: 14rem
+  @media (max-width: 30rem)
+    > .fieldset
+      background-image: none
+      padding: 0

@@ -1,0 +1,102 @@
+.advantages-communication
+  > .cta-area
+    @extend %insider
+    background-color: $lightest-gray
+    margin: 0 -1rem
+    text-align: center
+    padding: 2rem
+  > .talk-on
+    display: block
+    padding: 3rem 0 1rem 0
+    margin: 0 -1rem
+    background-color: rgba(136, 156, 167, 1)
+    color: $white
+    &--over
+      text-align: center
+  > .container
+    display: block
+    margin-top: 2rem
+    @extend %clearfix
+    > div
+      display: block
+      @extend %insider
+      float: left
+      width: 33.3333333%
+  .pro-illustration
+    display: block
+    width: auto
+    height: auto
+    max-width: 12rem
+    margin: 0 auto
+  .pro-content
+    display: block
+    padding: 1rem
+    > .headline
+      font-size: 1.5rem
+      margin-bottom: 1rem
+
+@media (max-width: 45rem)
+  .advantages-communication
+    > .container
+      > div
+        float: none
+        width: 100%
+        padding: 0 1rem
+        +clearfix
+        > .pro-illustration,
+        > .pro-content
+          float: left
+          +box-sizing(border-box)
+        > .pro-illustration
+          width: 25%
+          min-width: 7rem
+        > .pro-content
+          width: 75%
+          padding-left: 2rem
+          > .headline__centered
+            text-align: left
+
+@media (max-width: 33rem)
+  .advantages-communication
+    > .container
+      > div
+        padding: 0 0 2rem 0
+        > .pro-illustration,
+        > .pro-content
+          float: none
+          width: 100%
+          padding: 0
+        > .pro-illustration,
+          padding-bottom: 1rem
+        > .pro-content
+          > .headline__centered
+            text-align: center
+            margin: 1rem -1rem
+          > .list
+            > li
+              text-align: center
+              padding-left: 0
+              &::before
+                display: none
+
+@media (max-width: 27rem)
+  .advantages-communication
+    > .talk-on
+      padding-top: 0
+    > .cta-area
+      padding: 1.5rem
+      margin-bottom: 1rem
+    > .container
+      margin: 0
+      > div
+        padding-bottom: 0
+        > .pro-illustration
+          display: none
+        > .pro-content
+          > .headline__centered
+            margin: 0
+            background-color: $white
+        &:last-child
+          > .pro-content
+            > .list
+              padding-bottom: 0

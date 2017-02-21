@@ -1,0 +1,46 @@
+.form--login
+  @extend %insider
+  background-color: $white
+  position: absolute
+  left: calc(50% - 11rem)
+  top: 0
+  width: 22rem
+  height: 23rem
+  background: transparent url(../images/card2.svg) no-repeat left top
+  background-position: left -2rem
+  background-size: 22rem auto
+  padding: 1.25rem 2.5rem 1rem 2.5rem
+  text-align: center
+  z-index: 2
+  > img
+    width: 10rem
+    height: auto
+  > fieldset
+    text-align: left
+    padding-top: 1rem
+  .form-component__checkbox
+    width: 6.5rem
+    padding-top: 0.5rem
+    label
+      padding-top: 0
+    .label-value
+      font-size: 0.75rem
+      line-height: 1.25
+  .button
+    position: absolute
+    bottom: 7rem
+    right: 3.4rem
+
+@media (max-width: 27rem)
+  .form--login
+    width: 100%
+    height: auto
+    left: 0
+    background-image: none
+    background-color: $lightest-gray
+    padding-top: 4rem
+    > img
+      width: 7rem
+    .button
+      bottom: 2.25rem
+      right: 2.5rem

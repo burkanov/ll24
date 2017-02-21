@@ -3,19 +3,113 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title></title>
+    <title>Lekkerland 24</title>
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/composition.css">
     <!--endbuild-->
   </head>
+
   <body>
-    <h1>Lekkerland24 - Login Seite<br/><br/>
-    <a href="freischaltung.html">Freischaltung</a><br/>
-    <a href="passwort.html">Passwort anlegen</a>
+
+    <div class="basis-container">
+      <header class="super-visual">
+        <div id="sc2_hype_container" class="animation" aria-live="polite">
+      		<script type="text/javascript" charset="utf-8" src="sc2/sc2.hyperesources/sc2_hype_generated_script.js?95309"></script>
+      	</div>
+        <form id="login" class="form form--login" autocomplete="on" method="get" action="#" novalidate>
+          <img src="images/logo.svg" alt="Lekkerland24">
+          <fieldset class="fieldset">
+            <p class="form-component">
+              <label data-validation="unchecked">
+                <input class="input--text" type="text" id="login" name="login" placeholder="E-Mail oder Kundennummer" />
+                <svg class="icon icon-validation-error">
+                  <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+                </svg>
+                <span class="validation-message">Login ist unbekannt</span>
+              </label>
+            </p>
+            <p class="form-component">
+              <label data-validation="unchecked">
+                <input class="input--text" type="password" id="password" name="password" placeholder="Passwort" />
+                <svg class="icon icon-validation-error">
+                  <use xlink:href="images/symbol-defs.svg#icon-warning"></use>
+                </svg>
+                <span class="validation-message">Bitte vergeben Sie ein Passwort, das den genannten Anforderungen entspricht.</span>
+                <a href="#" class="link link__pass">Passwort vergessen?</a>
+              </label>
+            </p>
+            <p class="form-component form-component__checkbox">
+              <input class="input--checkbox" type="checkbox" id="stay-logged-in" name="stay-logged-in" value="yes" />
+              <label for="stay-logged-in">
+                <svg class="icon icon--checkmark">
+                  <use xlink:href="images/symbol-defs.svg#icon-checkmark"></use>
+                </svg>
+                <span class="label-value">Eingelogged bleiben</span>
+              </label>
+            </p>
+            <button type="submit" class="button" value="submit">Einloggen</button>
+          </fieldset>
+        </form>
+
+        <div class="language-controls">
+          <a href="#" class="current">DE</a>
+          <a href="#">EN</a>
+          <a href="#">TR</a>
+        </div>
+
+      </header>
+      <div class="advantages-communication">
+        <p class="talk-on talk-on--over">Haben Sie noch kein Zugang zum Lekkerland24?</p>
+        <div class="cta-area">
+          <a href="anmeldung.html" class="link link__cta--large">Jetzt Anmelden!</a>
+        </div>
+        <div class="container">
+          <div>
+            <img class="pro-illustration" src="images/driver.svg" />
+            <div class="pro-content">
+              <h2 class="headline headline__centered">Bestellen</h2>
+              <ul class="list list--checks">
+                <li>Rund um die Uhr bestellen</li>
+                <li>Schnellbestellung und Scanner</li>
+                <li>Individuelles Sortiment und Preise</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img class="pro-illustration" src="images/gvl.svg" />
+            <div class="pro-content">
+              <h2 class="headline headline__centered">Informieren</h2>
+              <ul class="list list--checks">
+                <li>Neuheiten</li>
+                <li>Ein- und Auslistungen</li>
+                <li>Aktuelle Ordersätze</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img class="pro-illustration" src="images/sign-up-lady.svg" />
+            <div class="pro-content">
+              <h2 class="headline headline__centered">Service</h2>
+              <ul class="list list--checks">
+                <li>Rechnungen</li>
+                <li>Merklisten</li>
+                <li>Rechtliches</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="#" class="link link__low-prio">Impressum</a>
+    </footer>
 
     <!-- build:js js/main.min.js -->
-    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="../node_modules/svgxuse/svgxuse.js" defer></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js" defer></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
   </body>

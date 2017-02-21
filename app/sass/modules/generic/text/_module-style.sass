@@ -28,5 +28,22 @@
   vertical-align: text-top
   color: $ll-red
 
+.info-well
+  display: block
+  position: relative
+  padding-left: 1.75rem
+  padding-top: 1rem
+  border-top: 1px dashed $ll-gray-20
+  > .icon
+    position: absolute
+    left: 0
+    top: 0.9rem
+    font-size: 1.25rem
+  &__small
+    font-size: 0.85rem
+    color: $ll-gray-60
+    > .icon
+      color: $ll-gray-40
+
 @media (max-width: $xs)
   .headline-icon

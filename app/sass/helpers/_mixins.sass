@@ -1,6 +1,12 @@
 // UTILITIES & MIXINS
 // --------------------------------------------------
 
+=clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
 // Transitions
 // -------------------------
 =addTransition($target: all, $type: linear, $duration: 0.2s)

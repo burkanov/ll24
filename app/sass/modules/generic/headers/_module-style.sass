@@ -8,3 +8,25 @@
       display: block
       height: auto
       width: auto
+
+.super-visual
+  display: block
+  position: relative
+  margin: 0 -1rem
+  background: rgba(112, 206, 214, 1) url(../images/scape.jpg) repeat-x center bottom
+  background-size: auto 25rem
+  height: 550px
+  > .animation
+    margin: auto
+    position: relative
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+@media (max-width: 27rem)
+  .super-visual
+    background: none
+    background-color: rgba(136, 156, 167, 1)
+    height: 21rem
+  #sc2_hype_container
+    display: none

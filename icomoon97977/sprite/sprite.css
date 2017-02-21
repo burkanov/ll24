@@ -1,0 +1,716 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-schedule {
+  width: 24px;
+  height: 24px;
+  background-position: 0 0;
+}
+.icon-add {
+  width: 24px;
+  height: 24px;
+  background-position: -40px 0;
+}
+.icon-add_box {
+  width: 24px;
+  height: 24px;
+  background-position: -80px 0;
+}
+.icon-assignment_ind {
+  width: 24px;
+  height: 24px;
+  background-position: -120px 0;
+}
+.icon-flag {
+  width: 24px;
+  height: 24px;
+  background-position: -160px 0;
+}
+.icon-chat_bubble_outline {
+  width: 24px;
+  height: 24px;
+  background-position: -200px 0;
+}
+.icon-check {
+  width: 24px;
+  height: 24px;
+  background-position: -240px 0;
+}
+.icon-check_box {
+  width: 24px;
+  height: 24px;
+  background-position: -280px 0;
+}
+.icon-check_box_outline_blank {
+  width: 24px;
+  height: 24px;
+  background-position: -320px 0;
+}
+.icon-check_circle {
+  width: 24px;
+  height: 24px;
+  background-position: -360px 0;
+}
+.icon-close {
+  width: 24px;
+  height: 24px;
+  background-position: -400px 0;
+}
+.icon-done {
+  width: 24px;
+  height: 24px;
+  background-position: -440px 0;
+}
+.icon-drafts {
+  width: 24px;
+  height: 24px;
+  background-position: -480px 0;
+}
+.icon-markunread {
+  width: 24px;
+  height: 24px;
+  background-position: -520px 0;
+}
+.icon-error {
+  width: 24px;
+  height: 24px;
+  background-position: -560px 0;
+}
+.icon-error_outline {
+  width: 24px;
+  height: 24px;
+  background-position: -600px 0;
+}
+.icon-help {
+  width: 24px;
+  height: 24px;
+  background-position: 0 -40px;
+}
+.icon-help_outline {
+  width: 24px;
+  height: 24px;
+  background-position: -40px -40px;
+}
+.icon-indeterminate_check_box {
+  width: 24px;
+  height: 24px;
+  background-position: -80px -40px;
+}
+.icon-info {
+  width: 24px;
+  height: 24px;
+  background-position: -120px -40px;
+}
+.icon-info_outline {
+  width: 24px;
+  height: 24px;
+  background-position: -160px -40px;
+}
+.icon-keyboard_arrow_down {
+  width: 24px;
+  height: 24px;
+  background-position: -200px -40px;
+}
+.icon-keyboard_arrow_left {
+  width: 24px;
+  height: 24px;
+  background-position: -240px -40px;
+}
+.icon-keyboard_arrow_right {
+  width: 24px;
+  height: 24px;
+  background-position: -280px -40px;
+}
+.icon-keyboard_arrow_up {
+  width: 24px;
+  height: 24px;
+  background-position: -320px -40px;
+}
+.icon-local_offer {
+  width: 24px;
+  height: 24px;
+  background-position: -360px -40px;
+}
+.icon-local_shipping {
+  width: 24px;
+  height: 24px;
+  background-position: -400px -40px;
+}
+.icon-room {
+  width: 24px;
+  height: 24px;
+  background-position: -440px -40px;
+}
+.icon-person {
+  width: 24px;
+  height: 24px;
+  background-position: -480px -40px;
+}
+.icon-person_add {
+  width: 24px;
+  height: 24px;
+  background-position: -520px -40px;
+}
+.icon-user {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -80px;
+}
+.icon-users {
+  width: 36px;
+  height: 32px;
+  background-position: -48px -80px;
+}
+.icon-user-plus {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -80px;
+}
+.icon-user-minus {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -80px;
+}
+.icon-user-check {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -80px;
+}
+.icon-user-tie {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -80px;
+}
+.icon-spinner3 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -80px;
+}
+.icon-spinner9 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -80px;
+}
+.icon-lock {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -80px;
+}
+.icon-unlocked {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -80px;
+}
+.icon-wrench {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -80px;
+}
+.icon-cog {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -80px;
+}
+.icon-clipboard {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -80px;
+}
+.icon-file-pdf {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -80px;
+}
+.icon-file-word {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -80px;
+}
+.icon-file-excel {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -80px;
+}
+.icon-home {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -128px;
+}
+.icon-office {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -128px;
+}
+.icon-pencil {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -128px;
+}
+.icon-books {
+  width: 36px;
+  height: 32px;
+  background-position: -144px -128px;
+}
+.icon-file-text {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -128px;
+}
+.icon-profile {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -128px;
+}
+.icon-files-empty {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -128px;
+}
+.icon-file-text2 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -128px;
+}
+.icon-file-zip {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -128px;
+}
+.icon-price-tag {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -128px;
+}
+.icon-price-tags {
+  width: 40px;
+  height: 32px;
+  background-position: -480px -128px;
+}
+.icon-cart {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -128px;
+}
+.icon-phone {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -128px;
+}
+.icon-envelop {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -128px;
+}
+.icon-clock {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -128px;
+}
+.icon-calendar {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -128px;
+}
+.icon-display {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -176px;
+}
+.icon-laptop {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -176px;
+}
+.icon-mobile {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -176px;
+}
+.icon-tablet {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -176px;
+}
+.icon-user2 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -176px;
+}
+.icon-spinner6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -176px;
+}
+.icon-search {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -176px;
+}
+.icon-zoom-in {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -176px;
+}
+.icon-zoom-out {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -176px;
+}
+.icon-key {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -176px;
+}
+.icon-lock2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -176px;
+}
+.icon-unlocked2 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -176px;
+}
+.icon-wrench2 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -176px;
+}
+.icon-equalizer {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -176px;
+}
+.icon-equalizer2 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -176px;
+}
+.icon-cog2 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -176px;
+}
+.icon-bin {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -224px;
+}
+.icon-briefcase {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -224px;
+}
+.icon-clipboard2 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -224px;
+}
+.icon-menu {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -224px;
+}
+.icon-menu2 {
+  width: 44px;
+  height: 32px;
+  background-position: -192px -224px;
+}
+.icon-menu3 {
+  width: 44px;
+  height: 32px;
+  background-position: -288px -224px;
+}
+.icon-menu4 {
+  width: 44px;
+  height: 32px;
+  background-position: -384px -224px;
+}
+.icon-flag2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -224px;
+}
+.icon-eye {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -224px;
+}
+.icon-eye-plus {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -224px;
+}
+.icon-eye-minus {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -224px;
+}
+.icon-eye-blocked {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -224px;
+}
+.icon-warning {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -224px;
+}
+.icon-notification {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -272px;
+}
+.icon-question {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -272px;
+}
+.icon-plus {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -272px;
+}
+.icon-minus {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -272px;
+}
+.icon-info2 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -272px;
+}
+.icon-cancel-circle {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -272px;
+}
+.icon-blocked {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -272px;
+}
+.icon-cross {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -272px;
+}
+.icon-checkmark {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -272px;
+}
+.icon-checkmark2 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -272px;
+}
+.icon-backward2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -272px;
+}
+.icon-forward3 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -272px;
+}
+.icon-first {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -272px;
+}
+.icon-last {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -272px;
+}
+.icon-previous2 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -272px;
+}
+.icon-next2 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -272px;
+}
+.icon-arrow-up-left2 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -320px;
+}
+.icon-arrow-up2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -320px;
+}
+.icon-arrow-up-right2 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -320px;
+}
+.icon-arrow-right2 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -320px;
+}
+.icon-arrow-down-right2 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -320px;
+}
+.icon-arrow-down2 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -320px;
+}
+.icon-arrow-down-left2 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -320px;
+}
+.icon-arrow-left2 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -320px;
+}
+.icon-circle-up {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -320px;
+}
+.icon-circle-right {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -320px;
+}
+.icon-circle-down {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -320px;
+}
+.icon-circle-left {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -320px;
+}
+.icon-sort-alpha-asc {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -320px;
+}
+.icon-sort-alpha-desc {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -320px;
+}
+.icon-sort-numeric-asc {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -320px;
+}
+.icon-sort-numberic-desc {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -320px;
+}
+.icon-filter {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -368px;
+}
+.icon-star {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -416px;
+}
+.icon-trash {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -416px;
+}
+.icon-user22 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -416px;
+}
+.icon-search2 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -416px;
+}
+.icon-settings {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -416px;
+}
+.icon-tag {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -416px;
+}
+.icon-lock22 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -416px;
+}
+.icon-pen {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -416px;
+}
+.icon-eye2 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -416px;
+}
+.icon-phone2 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -416px;
+}
+.icon-mail {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -416px;
+}
+.icon-params {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -416px;
+}
+.icon-data {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -416px;
+}
+.icon-clip {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -416px;
+}
+.icon-shop {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -416px;
+}
+.icon-calendar2 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -416px;
+}
+.icon-wallet {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -464px;
+}
+.icon-truck {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -464px;
+}
+

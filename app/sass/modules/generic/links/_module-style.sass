@@ -1,12 +1,39 @@
-.link
+a
   @extend %common-transition
-  display: inline-block
-  padding: 0.25rem
-  margin: -0.25rem
-  &:link
-    color: $ll-blue
+
+.link
+  text-decoration: none
+  &:link,
+  &:visited
+    color: $link-color
   &:hover,
   &:focus
-    color: $ll-red-40k
-  &--off-topic
-    color: $ll-gray-40
+    color: $link-color-hover
+    text-decoration: underline
+  &__low-prio
+    text-decoration: underline
+    &:link,
+    &:visited
+      color: $ll-gray-60
+    &:hover,
+    &:focus
+      color: $link-color-hover
+  &.link__pass
+    font-size: 0.75rem
+    text-decoration: underline
+  &__cta--large
+    display: inline-block
+    background-color: $ll-red
+    +border-radius(1.5rem)
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24)
+    font-size: 1.5rem
+    line-height: 3rem
+    @extend %txt__bold
+    padding: 0 1.5rem
+    &:link,
+    &:visited
+      color: $white
+    &:hover,
+    &:focus
+      text-decoration: none
+      background-color: $ll-red-40k

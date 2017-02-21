@@ -21,8 +21,8 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'app'
     }
-  })
-})
+  });
+});
 
 gulp.task('sass', function() {
   return gulp.src('app/sass/**/*.sass') // Gets all files ending with .sass in app/scss and children dirs
@@ -31,14 +31,14 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
-})
+});
 
 // Watchers
 gulp.task('watch', function() {
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
-})
+});
 
 // Optimization Tasks
 // ------------------
@@ -60,21 +60,21 @@ gulp.task('images', function() {
     .pipe(cache(imagemin({
       interlaced: true,
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/images'));
 });
 
 // Copying fonts
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-})
+    .pipe(gulp.dest('dist/fonts'));
+});
 
 // Cleaning
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
     return cache.clearAll(cb);
   });
-})
+});
 
 gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
@@ -86,13 +86,13 @@ gulp.task('clean:dist', function() {
 gulp.task('default', function(callback) {
   runSequence(['sass', 'browserSync', 'watch'],
     callback
-  )
-})
+  );
+});
 
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     ['sass', 'useref', 'images', 'fonts'],
     callback
-  )
-})
+  );
+});
